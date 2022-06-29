@@ -282,42 +282,62 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="forms\msg.cs">
+    <Compile Include="ChildScreens\MainFormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\msg.Designer.cs">
-      <DependentUpon>msg.cs</DependentUpon>
+    <Compile Include="ChildScreens\MainFormMenu.Designer.cs">
+      <DependentUpon>MainFormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\UserData.cs" />
+    <Compile Include="forms\CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </Compile>
     <Compile Include="lncludes\SQLConfig.cs" />
+    <Compile Include="lncludes\SQLConfiguration.cs" />
     <Compile Include="lncludes\usableFunction.cs" />
-    <Compile Include="login.cs">
+    <Compile Include="ChildScreens\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
-      <DependentUpon>login.cs</DependentUpon>
+    <Compile Include="ChildScreens\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="main_menu.cs">
+    <Compile Include="Screens\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="main_menu.Designer.cs">
-      <DependentUpon>main_menu.cs</DependentUpon>
+    <Compile Include="Screens\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="settibg_db.cs">
+    <Compile Include="Screens\DbSettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="settibg_db.Designer.cs">
-      <DependentUpon>settibg_db.cs</DependentUpon>
+    <Compile Include="Screens\DbSettingsForm.Designer.cs">
+      <DependentUpon>DbSettingsForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="forms\msg.resx">
-      <DependentUpon>msg.cs</DependentUpon>
+    <EmbeddedResource Include="ChildScreens\MainFormMenu.resx">
+      <DependentUpon>MainFormMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
-      <DependentUpon>login.cs</DependentUpon>
+    <EmbeddedResource Include="forms\CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="main_menu.resx">
-      <DependentUpon>main_menu.cs</DependentUpon>
+    <EmbeddedResource Include="ChildScreens\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -330,8 +350,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="settibg_db.resx">
-      <DependentUpon>settibg_db.cs</DependentUpon>
+    <EmbeddedResource Include="Screens\DbSettingsForm.resx">
+      <DependentUpon>DbSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -395,5 +415,15 @@
   <ItemGroup>
     <None Include="Resources\icon_water.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_canali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_dehkan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_rayoni.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
