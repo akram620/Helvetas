@@ -37,6 +37,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.dataGridViewUsers = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -47,6 +48,7 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit_btn = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete_btn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.change_admin_btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,7 +170,7 @@
             this.create_user_btn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(173)))), ((int)(((byte)(87)))));
             this.create_user_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("create_user_btn.BackgroundImage")));
             this.create_user_btn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.create_user_btn.ButtonText = "Илова кардан";
+            this.create_user_btn.ButtonText = "Илова кардани коргар";
             this.create_user_btn.ButtonTextMarginLeft = 0;
             this.create_user_btn.ColorContrastOnClick = 45;
             this.create_user_btn.ColorContrastOnHover = 45;
@@ -201,7 +203,7 @@
             this.create_user_btn.IdleIconLeftImage = null;
             this.create_user_btn.IdleIconRightImage = null;
             this.create_user_btn.IndicateFocus = false;
-            this.create_user_btn.Location = new System.Drawing.Point(688, 10);
+            this.create_user_btn.Location = new System.Drawing.Point(638, 10);
             this.create_user_btn.Name = "create_user_btn";
             this.create_user_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.create_user_btn.OnDisabledState.BorderRadius = 15;
@@ -235,7 +237,7 @@
             this.create_user_btn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.create_user_btn.OnPressedState.IconLeftImage = null;
             this.create_user_btn.OnPressedState.IconRightImage = null;
-            this.create_user_btn.Size = new System.Drawing.Size(140, 42);
+            this.create_user_btn.Size = new System.Drawing.Size(190, 42);
             this.create_user_btn.TabIndex = 20;
             this.create_user_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.create_user_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -312,11 +314,103 @@
             this.delete_btn.ToolTipText = "Нест кардан";
             this.delete_btn.Width = 60;
             // 
+            // change_admin_btn
+            // 
+            this.change_admin_btn.AllowAnimations = true;
+            this.change_admin_btn.AllowMouseEffects = true;
+            this.change_admin_btn.AllowToggling = false;
+            this.change_admin_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.change_admin_btn.AnimationSpeed = 200;
+            this.change_admin_btn.AutoGenerateColors = false;
+            this.change_admin_btn.AutoRoundBorders = false;
+            this.change_admin_btn.AutoSizeLeftIcon = true;
+            this.change_admin_btn.AutoSizeRightIcon = true;
+            this.change_admin_btn.BackColor = System.Drawing.Color.Transparent;
+            this.change_admin_btn.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.change_admin_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("change_admin_btn.BackgroundImage")));
+            this.change_admin_btn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.change_admin_btn.ButtonText = "Иваз кардани админ";
+            this.change_admin_btn.ButtonTextMarginLeft = 0;
+            this.change_admin_btn.ColorContrastOnClick = 45;
+            this.change_admin_btn.ColorContrastOnHover = 45;
+            this.change_admin_btn.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.change_admin_btn.CustomizableEdges = borderEdges2;
+            this.change_admin_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.change_admin_btn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.change_admin_btn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.change_admin_btn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.change_admin_btn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.change_admin_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.change_admin_btn.ForeColor = System.Drawing.Color.White;
+            this.change_admin_btn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.change_admin_btn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.change_admin_btn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.change_admin_btn.IconMarginLeft = 11;
+            this.change_admin_btn.IconPadding = 10;
+            this.change_admin_btn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.change_admin_btn.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.change_admin_btn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.change_admin_btn.IconSize = 25;
+            this.change_admin_btn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.change_admin_btn.IdleBorderRadius = 15;
+            this.change_admin_btn.IdleBorderThickness = 1;
+            this.change_admin_btn.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.change_admin_btn.IdleIconLeftImage = null;
+            this.change_admin_btn.IdleIconRightImage = null;
+            this.change_admin_btn.IndicateFocus = false;
+            this.change_admin_btn.Location = new System.Drawing.Point(442, 10);
+            this.change_admin_btn.Name = "change_admin_btn";
+            this.change_admin_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.change_admin_btn.OnDisabledState.BorderRadius = 15;
+            this.change_admin_btn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.change_admin_btn.OnDisabledState.BorderThickness = 1;
+            this.change_admin_btn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.change_admin_btn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.change_admin_btn.OnDisabledState.IconLeftImage = null;
+            this.change_admin_btn.OnDisabledState.IconRightImage = null;
+            this.change_admin_btn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.change_admin_btn.onHoverState.BorderRadius = 15;
+            this.change_admin_btn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.change_admin_btn.onHoverState.BorderThickness = 1;
+            this.change_admin_btn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.change_admin_btn.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.change_admin_btn.onHoverState.IconLeftImage = null;
+            this.change_admin_btn.onHoverState.IconRightImage = null;
+            this.change_admin_btn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.change_admin_btn.OnIdleState.BorderRadius = 15;
+            this.change_admin_btn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.change_admin_btn.OnIdleState.BorderThickness = 1;
+            this.change_admin_btn.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.change_admin_btn.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.change_admin_btn.OnIdleState.IconLeftImage = null;
+            this.change_admin_btn.OnIdleState.IconRightImage = null;
+            this.change_admin_btn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.change_admin_btn.OnPressedState.BorderRadius = 15;
+            this.change_admin_btn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.change_admin_btn.OnPressedState.BorderThickness = 1;
+            this.change_admin_btn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.change_admin_btn.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.change_admin_btn.OnPressedState.IconLeftImage = null;
+            this.change_admin_btn.OnPressedState.IconRightImage = null;
+            this.change_admin_btn.Size = new System.Drawing.Size(190, 42);
+            this.change_admin_btn.TabIndex = 22;
+            this.change_admin_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.change_admin_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.change_admin_btn.TextMarginLeft = 0;
+            this.change_admin_btn.TextPadding = new System.Windows.Forms.Padding(0);
+            this.change_admin_btn.UseDefaultRadiusAndThickness = true;
+            this.change_admin_btn.Click += new System.EventHandler(this.change_admin_btn_Click);
+            // 
             // UserListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 555);
+            this.Controls.Add(this.change_admin_btn);
             this.Controls.Add(this.dataGridViewUsers);
             this.Controls.Add(this.create_user_btn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -340,5 +434,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewImageColumn edit_btn;
         private System.Windows.Forms.DataGridViewImageColumn delete_btn;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 change_admin_btn;
     }
 }

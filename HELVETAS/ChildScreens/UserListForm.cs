@@ -27,8 +27,28 @@ namespace HELVETAS.ChildScreens
 
         private void create_user_btn_Click(object sender, EventArgs e)
         {
-            addUser = new AddUser(this, "", "Сохтан", "");
-            addUser.ShowDialog();
+            if(UserData.type_user == "Админ")
+            {
+                addUser = new AddUser(this, "", "Сохтан", "");
+                addUser.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Танхо админ коргар илова карда метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void change_admin_btn_Click(object sender, EventArgs e)
+        {
+            if (UserData.type_user == "Админ")
+            {
+                addUser = new AddUser(this, "", "Сохтан", "");
+                addUser.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Танхо админ коргар илова карда метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void UserListForm_Shown(object sender, EventArgs e)
@@ -51,30 +71,36 @@ namespace HELVETAS.ChildScreens
         {
             if (e.ColumnIndex == edit_btn.Index)
             {
+                if (UserData.type_user == "Админ")
+                {
+                    string id = dataGridViewUsers.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    string type_current_user = dataGridViewUsers.Rows[e.RowIndex].Cells[5].Value.ToString();
 
-                string id = dataGridViewUsers.Rows[e.RowIndex].Cells[2].Value.ToString();
-                string type_current_user = dataGridViewUsers.Rows[e.RowIndex].Cells[5].Value.ToString();
 
+                    addUser = new AddUser(this, id, "Иваз кардан", type_current_user);
+                    addUser.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Танхо админ коргарро иваз карда метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 
-                addUser = new AddUser(this, id, "Иваз кардан", type_current_user);
-                addUser.ShowDialog();
 
             }
 
             if (e.ColumnIndex == delete_btn.Index)
             {
-               
-
-                DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + dataGridViewUsers.Rows[e.RowIndex].Cells[3].Value + " " + dataGridViewUsers.Rows[e.RowIndex].Cells[4].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.None);
-
-                if (dialogResult == DialogResult.Yes)
+               if (UserData.type_user == "Админ")
                 {
-                    if (UserData.type_user == "Админ")
+                    DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + dataGridViewUsers.Rows[e.RowIndex].Cells[3].Value + " " + dataGridViewUsers.Rows[e.RowIndex].Cells[4].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.None);
+
+
+                    if (dialogResult == DialogResult.Yes)
                     {
                         string type_current_user = dataGridViewUsers.Rows[e.RowIndex].Cells[5].Value.ToString();
                         if (type_current_user == "Админ")
                         {
-                            MessageBox.Show("Пеш аз нест кардани админ, админи нав интихоб кунед!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Пеш аз нест кардани админ, админро иваз кунед!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
@@ -91,15 +117,17 @@ namespace HELVETAS.ChildScreens
                                 MessageBox.Show("Хатоги хангоми нест кардани коргар!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
-                        
-                    }
-                    else
-                    {
-                        MessageBox.Show("Танхо админ коргарро нест карда метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Танхо админ коргарро нест карда метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+               
                 
             }
         }
+
+        
     }
 }

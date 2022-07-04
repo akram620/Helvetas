@@ -132,8 +132,11 @@ namespace HELVETAS.Screens
                     {
                         if (type_user_text == "Админ" && this.type_current_user == "Админ")
                         {
-                            int result_login = sqlConfiguration.loginUser(sql_user_check).Rows.Count;
-                            if (result_login == 1 || result_login == 0)
+                            DataTable result_login = sqlConfiguration.loginUser(sql_user_check);
+
+                            int count = result_login.Rows.Count;
+
+                            if (count == 0)
                             {
                                 int result = sqlConfiguration.sqlQuery(sql_update_user);
                                 if (result == 500)
@@ -149,7 +152,26 @@ namespace HELVETAS.Screens
                             }
                             else
                             {
-                                message_txt.Text = "Чунин логин дар система вучуд дорад! Логини дигар интихоб кунед!";
+                                string id_result = result_login.Rows[0]["id"].ToString();
+
+                                if (id_result == id)
+                                {
+                                    int result = sqlConfiguration.sqlQuery(sql_update_user);
+                                    if (result == 500)
+                                    {
+                                        MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    }
+                                    else
+                                    {
+                                        this.Close();
+                                        userListForm.display();
+                                        MessageBox.Show("Маълумотхои коргар бо муваффакият иваз карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
+                                    }
+                                }
+                                else
+                                {
+                                    message_txt.Text = "Чунин логин дар система сабт шудааст. Логини дигар интихоб кунед!";
+                                }
                             }
                         }
                         else if (type_user_text == "Коргар" && this.type_current_user == "Админ")
@@ -162,8 +184,11 @@ namespace HELVETAS.Screens
                         }
                         else
                         {
-                            int result_login = sqlConfiguration.loginUser(sql_user_check).Rows.Count;
-                            if (result_login == 1 || result_login == 0)
+                            DataTable result_login = sqlConfiguration.loginUser(sql_user_check);
+                            
+                            int count = result_login.Rows.Count;
+
+                            if (count == 0)
                             {
                                 int result = sqlConfiguration.sqlQuery(sql_update_user);
                                 if (result == 500)
@@ -175,6 +200,29 @@ namespace HELVETAS.Screens
                                     this.Close();
                                     userListForm.display();
                                     MessageBox.Show("Маълумотхои коргар бо муваффакият иваз карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
+                                }
+                            }
+                            else
+                            {
+                                string id_result = result_login.Rows[0]["id"].ToString();
+
+                                if (id_result == id)
+                                {
+                                    int result = sqlConfiguration.sqlQuery(sql_update_user);
+                                    if (result == 500)
+                                    {
+                                        MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    }
+                                    else
+                                    {
+                                        this.Close();
+                                        userListForm.display();
+                                        MessageBox.Show("Маълумотхои коргар бо муваффакият иваз карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
+                                    }
+                                }
+                                else
+                                {
+                                    message_txt.Text = "Чунин логин дар система сабт шудааст. Логини дигар интихоб кунед!";
                                 }
                             }
                         }
