@@ -17,30 +17,19 @@ namespace HELVETAS
     public partial class LoginForm : Form
     {
 
-        public static string name;
-
-
         SQLConfiguration sqlConfiguration;
 
         DbSettingsForm dbSettingsForm;
-
-        CustomMessageBox customMessageBox;
-        SQLConfig sqcon = new SQLConfig();
+        
 
         public LoginForm()
         {
             InitializeComponent();
+            sqlConfiguration = new SQLConfiguration();
         }
-
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            dbSettingsForm = new DbSettingsForm();
-            customMessageBox = new CustomMessageBox();
-
-            sqlConfiguration = new SQLConfiguration();
-
-            
             List<string> setting_db = new List<string>();
             string line;
             StreamReader sr = new StreamReader(path);
@@ -56,21 +45,14 @@ namespace HELVETAS
             SQLConfiguration.password = setting_db[3];
             SQLConfiguration.port = "3306";
 
-            if (SQLConfiguration.getConnection())
+            if (!SQLConfiguration.getConnection())
             {
-                customMessageBox.label_txt_info_txt = "Connection success";
-                customMessageBox.img_info_img = Properties.Resources.info;
-                // customMessageBox.ShowDialog();
+                MessageBox.Show("Хатоги хангоми ба база пайваст шудан!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
             }
-            else
-            {
-                customMessageBox.label_txt_info_txt = "Connection failed";
-                customMessageBox.img_info_img = Properties.Resources.info_button;
-                customMessageBox.ShowDialog();
-                dbSettingsForm.ShowDialog();
-            }
-
         }
+
+
+
 
 
         private void pictureBox4_MouseHover(object sender, EventArgs e)
@@ -85,6 +67,7 @@ namespace HELVETAS
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            dbSettingsForm = new DbSettingsForm();
             dbSettingsForm.ShowDialog();
         }
 
@@ -95,7 +78,7 @@ namespace HELVETAS
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            String sql = "select * from users where login_user = '" + login_txt.Text + "' and password_user = '" + password_txt.Text + "'";
+            string sql = "select * from users where login_user = '" + login_txt.Text + "' and password_user = '" + password_txt.Text + "'";
 
             MainForm mainForm = new MainForm();
 
@@ -103,32 +86,36 @@ namespace HELVETAS
 
             if (dataTable == null)
             {
-                customMessageBox.label_txt_info_txt = "Хатоги дар ким кучо хаст, ки кофта ёбед!!!";
-                customMessageBox.img_info_img = Properties.Resources.info_button;
-                customMessageBox.ShowDialog();
+                MessageBox.Show("Дар ким кучое хатоги хаст!!!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 if (dataTable.Rows.Count == 1)
                 {
-                    name = dataTable.Rows[0]["name_user"].ToString();
-                    string type = dataTable.Rows[0]["type_user"].ToString();
-
-                    UserData.name_user = name;
-
-
-                    //UserData.setInfo(name, type);
+                    UserData.name_user = dataTable.Rows[0]["name_user"].ToString();
+                    UserData.type_user = dataTable.Rows[0]["type_user"].ToString();
 
                     mainForm.Show();
                     this.Hide();
                 }
                 else
                 {
-                    customMessageBox.label_txt_info_txt = "Логин ё парол нодуруст аст ё ин ки чунин истифодабаранда вучуд надорад!";
-                    customMessageBox.img_info_img = Properties.Resources.info;
-                    customMessageBox.ShowDialog();
+                    MessageBox.Show("Логин ё парол нодуруст аст ё ин ки чунин истифодабаранда вучуд надорад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
             }
+
+            
+        }
+
+        private void connect_btn_Click(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

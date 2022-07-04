@@ -1,4 +1,6 @@
-﻿using HELVETAS.forms;
+﻿using Bunifu.UI.WinForms;
+using Guna.UI2.WinForms;
+using HELVETAS.forms;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -6,6 +8,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HELVETAS.lncludes
 {
@@ -17,46 +20,52 @@ namespace HELVETAS.lncludes
         public static String username { get; set; }
         public static String password { get; set; }
         public static String database { get; set; }
-        public static bool stateConnection { get; set; }
 
         public static MySqlConnection connection;
 
         public  MySqlDataAdapter dataAdapter;
         public DataTable dataTable;
+        private MySqlCommand cmd;
 
         public static bool getConnection()
         {
             string sql = "datasource=" + datasource + ";port=" + port + ";username=" + username + ";password=" + password + ";database=" + database + ";";
 
-            connection = new MySqlConnection(sql);
-
             try
             {
-                if (connection.State == System.Data.ConnectionState.Closed)
-                {
-                    connection.Open();
-                }
-                stateConnection = true;
+                connection = new MySqlConnection(sql);
+                connection.Open();
                 connection.Close();
                 return true;
             }
-            catch(MySqlException exception)
+            catch
             {
-                stateConnection = false;
                 return false;
-                
             }
         }
 
-
-        private static MySqlCommand cmd;
-
-        public DataTable loginUser(string sql)
+        private void openConnection()
         {
             if (connection.State == System.Data.ConnectionState.Closed)
             {
                 connection.Open();
             }
+        }
+
+        private void closeConnection()
+        {
+            if (connection.State == System.Data.ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        
+        
+
+        public DataTable loginUser(string sql)
+        {
+            openConnection();
 
             try
             {
@@ -80,13 +89,73 @@ namespace HELVETAS.lncludes
             }
             finally
             {
-                if (connection.State == System.Data.ConnectionState.Open)
-                {
-                    connection.Close();
-                }
+                closeConnection();
+                cmd = null;
+                dataAdapter = null;
+                dataTable = null;
             }
         }
 
-        
+        public int sqlQuery(string sql)
+        {
+
+            try
+            {
+                openConnection();
+
+                cmd = new MySqlCommand();
+                
+                cmd.Connection = connection;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+
+                return 1;
+                
+            }
+
+            catch (Exception ex)
+            {
+                return 500;
+            }
+
+            finally
+            {
+                closeConnection();
+                cmd = null;
+            }
+        }
+
+        public void displayList(string sql, DataGridView dataGridView)
+        {
+            try
+            {
+                openConnection();
+                cmd = new MySqlCommand();
+                dataAdapter = new MySqlDataAdapter();
+                dataTable = new DataTable();
+
+
+                cmd.Connection = connection;
+                cmd.CommandText = sql;
+                dataAdapter.SelectCommand = cmd;
+                
+                dataAdapter.Fill(dataTable);
+
+                dataGridView.DataSource = dataTable;
+                
+            }
+
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                closeConnection();
+                cmd = null;
+                dataAdapter = null;
+                dataTable = null;
+            }
+        }
     }
 }

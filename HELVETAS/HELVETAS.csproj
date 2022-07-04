@@ -288,6 +288,12 @@
     <Compile Include="ChildScreens\MainFormMenu.Designer.cs">
       <DependentUpon>MainFormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildScreens\UserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\UserListForm.Designer.cs">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\UserData.cs" />
     <Compile Include="forms\CustomMessageBox.cs">
       <SubType>Form</SubType>
@@ -326,6 +332,9 @@
     </Compile>
     <EmbeddedResource Include="ChildScreens\MainFormMenu.resx">
       <DependentUpon>MainFormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildScreens\UserListForm.resx">
+      <DependentUpon>UserListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\CustomMessageBox.resx">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
@@ -424,6 +433,11 @@
   <ItemGroup>
     <None Include="Resources\icon_rayoni.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\delete_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

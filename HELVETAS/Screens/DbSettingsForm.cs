@@ -30,16 +30,7 @@ namespace HELVETAS
         }
 
 
-        private void connect_but_Click(object sender, EventArgs e)
-        {
-            if (SQLConfiguration.stateConnection)
-            {
-                LoginForm loginForm = new LoginForm();
-                this.Hide();
-                loginForm.Show();
-
-            }
-        }
+        
 
 
         private void DbSettingsForm_Load(object sender, EventArgs e)
@@ -60,18 +51,22 @@ namespace HELVETAS
             txt_password.Text = setting_db[3];
         }
 
-
-        private void test_connect_btn_Click(object sender, EventArgs e)
+        private bool testFunctionForDB()
         {
             SQLConfiguration.datasource = txt_server.Text;
             SQLConfiguration.database = txt_name_db.Text;
             SQLConfiguration.port = "3306";
             SQLConfiguration.username = txt_user.Text;
             SQLConfiguration.password = txt_password.Text;
-            
-            if (SQLConfiguration.getConnection())
+
+            return SQLConfiguration.getConnection();
+        }
+
+        private void test_connect_btn_Click(object sender, EventArgs e)
+        {            
+            if (testFunctionForDB())
             {
-                customMessageBox.label_txt_info_txt = "Success";
+                customMessageBox.label_txt_info_txt = "Натича: Ба база пайваст шудан мумкин аст!";
                 customMessageBox.img_info_img = Properties.Resources.info;
                 customMessageBox.ShowDialog();
                 save_btn.Enabled = true;
@@ -79,7 +74,7 @@ namespace HELVETAS
             }
             else
             {
-                customMessageBox.label_txt_info_txt = "Failed test\nCheck the inserted data";
+                customMessageBox.label_txt_info_txt = "Натича: Ба база пайвайт шудан номумкин аст!";
                 customMessageBox.img_info_img = Properties.Resources.info_button;
                 customMessageBox.ShowDialog();
             }
@@ -88,33 +83,58 @@ namespace HELVETAS
 
         private void save_btn_Click(object sender, EventArgs e)
         {
-            try
+            if (testFunctionForDB())
             {
-                StreamWriter file = new StreamWriter(path);
+                try
+                {
+                    StreamWriter file = new StreamWriter(path);
 
-                file.WriteLine(txt_server.Text);
-                file.WriteLine(txt_name_db.Text);
-                file.WriteLine(txt_user.Text);
-                file.WriteLine(txt_password.Text);
+                    file.WriteLine(txt_server.Text);
+                    file.WriteLine(txt_name_db.Text);
+                    file.WriteLine(txt_user.Text);
+                    file.WriteLine(txt_password.Text);
 
 
-                customMessageBox.label_txt_info_txt = "Амалиёт анчом ёфт!";
-                customMessageBox.img_info_img = Properties.Resources.info;
-                customMessageBox.ShowDialog();
-                file.Flush();
-                file.Close();
+                    customMessageBox.label_txt_info_txt = "Амалиёт анчом ёфт!";
+                    customMessageBox.img_info_img = Properties.Resources.info;
+                    customMessageBox.ShowDialog();
+                    file.Flush();
+                    file.Close();
 
+                }
+                catch (Exception ex)
+                {
+                    CustomMessageBox new_msg = new CustomMessageBox();
+                    new_msg.label_txt_info_txt = "Шумо хатогие доред!\n" + @"\b Хатоги" + "\n" + ex.ToString();
+                    new_msg.img_info_img = Properties.Resources.info_button;
+                    new_msg.ShowDialog();
+
+                }
             }
-            catch (Exception ex)
+            else
             {
-                CustomMessageBox new_msg = new CustomMessageBox();
-                new_msg.label_txt_info_txt = "Шумо хатогие доред!\n" + @"\b Хатоги" + "\n" + ex.ToString();
-                new_msg.img_info_img = Properties.Resources.info_button;
-                new_msg.ShowDialog();
+                customMessageBox.label_txt_info_txt = "Бо ин маълумотхо ба база пайваст шудан номумкин аст!";
+                customMessageBox.img_info_img = Properties.Resources.info_button;
+                customMessageBox.ShowDialog();
+            }
+            
+        }
 
+        private void connect_but_Click(object sender, EventArgs e)
+        {
+            if (testFunctionForDB())
+            {
+                LoginForm loginForm = new LoginForm();
+                this.Hide();
+            }
+            else
+            {
+                customMessageBox.label_txt_info_txt = "Бо ин маълумотхо ба база пайваст шудан номумкин аст!";
+                customMessageBox.img_info_img = Properties.Resources.info_button;
+                customMessageBox.ShowDialog();
             }
         }
 
-    
+
     }
 }

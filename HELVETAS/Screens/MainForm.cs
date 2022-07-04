@@ -28,6 +28,11 @@ namespace HELVETAS
             
         }
 
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            name_type_user_txt.Text = UserData.getInfo();
+        }
+
 
 
 
@@ -39,7 +44,6 @@ namespace HELVETAS
 
 
         Form activeForm;
-
         private void openChildForm(Form childForm)
         {
             if(activeForm != null)
@@ -89,7 +93,7 @@ namespace HELVETAS
 
         private void users_btn_menu_Click(object sender, EventArgs e)
         {
-            openChildForm(new AddUser());
+            openChildForm(new UserListForm());
         }
 
 
@@ -98,14 +102,58 @@ namespace HELVETAS
             Application.Exit();
         }
 
-        private void bunifuButton5_Click(object sender, EventArgs e)
+        private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            
+            LoginForm loginForm = new LoginForm();
+            this.Hide();
+            loginForm.Show();
         }
 
-        private void MainForm_Shown(object sender, EventArgs e)
+ 
+
+        private void water_jouarnal_but_m_m_Click(object sender, EventArgs e)
         {
-            name_type_user_txt.Text = UserData.name_user;
+
+        }
+
+        private void elect_journal_but_m_m_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton13_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
