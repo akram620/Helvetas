@@ -17,8 +17,7 @@ namespace HELVETAS
     public partial class DbSettingsForm : Form
     {
         SQLConfiguration sqlConfiguration;
-
-        SQLConfig mysql_sqting_database;
+        
 
         CustomMessageBox customMessageBox;
 

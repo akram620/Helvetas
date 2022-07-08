@@ -325,9 +325,7 @@
     <Compile Include="dialogs\LoginUsersListDialog.Designer.cs">
       <DependentUpon>LoginUsersListDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="lncludes\SQLConfig.cs" />
     <Compile Include="lncludes\SQLConfiguration.cs" />
-    <Compile Include="lncludes\usableFunction.cs" />
     <Compile Include="dialogs\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
