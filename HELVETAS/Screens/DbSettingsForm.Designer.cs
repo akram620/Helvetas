@@ -298,7 +298,7 @@
             this.test_connect_btn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.test_connect_btn.IconSize = 25;
             this.test_connect_btn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.test_connect_btn.IdleBorderRadius = 15;
+            this.test_connect_btn.IdleBorderRadius = 10;
             this.test_connect_btn.IdleBorderThickness = 1;
             this.test_connect_btn.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.test_connect_btn.IdleIconLeftImage = null;
@@ -307,7 +307,7 @@
             this.test_connect_btn.Location = new System.Drawing.Point(34, 448);
             this.test_connect_btn.Name = "test_connect_btn";
             this.test_connect_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.test_connect_btn.OnDisabledState.BorderRadius = 15;
+            this.test_connect_btn.OnDisabledState.BorderRadius = 10;
             this.test_connect_btn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.test_connect_btn.OnDisabledState.BorderThickness = 1;
             this.test_connect_btn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -315,7 +315,7 @@
             this.test_connect_btn.OnDisabledState.IconLeftImage = null;
             this.test_connect_btn.OnDisabledState.IconRightImage = null;
             this.test_connect_btn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.test_connect_btn.onHoverState.BorderRadius = 15;
+            this.test_connect_btn.onHoverState.BorderRadius = 10;
             this.test_connect_btn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.test_connect_btn.onHoverState.BorderThickness = 1;
             this.test_connect_btn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -323,7 +323,7 @@
             this.test_connect_btn.onHoverState.IconLeftImage = null;
             this.test_connect_btn.onHoverState.IconRightImage = null;
             this.test_connect_btn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.test_connect_btn.OnIdleState.BorderRadius = 15;
+            this.test_connect_btn.OnIdleState.BorderRadius = 10;
             this.test_connect_btn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.test_connect_btn.OnIdleState.BorderThickness = 1;
             this.test_connect_btn.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
@@ -331,7 +331,7 @@
             this.test_connect_btn.OnIdleState.IconLeftImage = null;
             this.test_connect_btn.OnIdleState.IconRightImage = null;
             this.test_connect_btn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.test_connect_btn.OnPressedState.BorderRadius = 15;
+            this.test_connect_btn.OnPressedState.BorderRadius = 10;
             this.test_connect_btn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.test_connect_btn.OnPressedState.BorderThickness = 1;
             this.test_connect_btn.OnPressedState.FillColor = System.Drawing.Color.DodgerBlue;
@@ -701,7 +701,7 @@
             this.save_btn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.save_btn.IconSize = 25;
             this.save_btn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.save_btn.IdleBorderRadius = 15;
+            this.save_btn.IdleBorderRadius = 10;
             this.save_btn.IdleBorderThickness = 1;
             this.save_btn.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.save_btn.IdleIconLeftImage = null;
@@ -710,7 +710,7 @@
             this.save_btn.Location = new System.Drawing.Point(155, 448);
             this.save_btn.Name = "save_btn";
             this.save_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.save_btn.OnDisabledState.BorderRadius = 15;
+            this.save_btn.OnDisabledState.BorderRadius = 10;
             this.save_btn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.save_btn.OnDisabledState.BorderThickness = 1;
             this.save_btn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -718,7 +718,7 @@
             this.save_btn.OnDisabledState.IconLeftImage = null;
             this.save_btn.OnDisabledState.IconRightImage = null;
             this.save_btn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.save_btn.onHoverState.BorderRadius = 15;
+            this.save_btn.onHoverState.BorderRadius = 10;
             this.save_btn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.save_btn.onHoverState.BorderThickness = 1;
             this.save_btn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -726,7 +726,7 @@
             this.save_btn.onHoverState.IconLeftImage = null;
             this.save_btn.onHoverState.IconRightImage = null;
             this.save_btn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.save_btn.OnIdleState.BorderRadius = 15;
+            this.save_btn.OnIdleState.BorderRadius = 10;
             this.save_btn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.save_btn.OnIdleState.BorderThickness = 1;
             this.save_btn.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
@@ -734,7 +734,7 @@
             this.save_btn.OnIdleState.IconLeftImage = null;
             this.save_btn.OnIdleState.IconRightImage = null;
             this.save_btn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.save_btn.OnPressedState.BorderRadius = 15;
+            this.save_btn.OnPressedState.BorderRadius = 10;
             this.save_btn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.save_btn.OnPressedState.BorderThickness = 1;
             this.save_btn.OnPressedState.FillColor = System.Drawing.Color.DodgerBlue;
