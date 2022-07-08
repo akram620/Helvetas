@@ -736,3 +736,7 @@ C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.MainForm.
 C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScreens.MainFormMenu.resources
 C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.Screens.AddUser.resources
 C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScreens.UserListForm.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.dialogs.ChangeAdminDialog.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.dialogs.LoginUsersListDialog.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScreens.DistrictForm.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.dialogs.AddDistrictDialog.resources

@@ -282,6 +282,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChildScreens\DistrictForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\DistrictForm.Designer.cs">
+      <DependentUpon>DistrictForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildScreens\MainFormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,19 +301,37 @@
       <DependentUpon>UserListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\UserData.cs" />
-    <Compile Include="forms\CustomMessageBox.cs">
+    <Compile Include="dialogs\AddDistrictDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\CustomMessageBox.Designer.cs">
+    <Compile Include="dialogs\AddDistrictDialog.Designer.cs">
+      <DependentUpon>AddDistrictDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\ChangeAdminDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\ChangeAdminDialog.Designer.cs">
+      <DependentUpon>ChangeAdminDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\CustomMessageBox.Designer.cs">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\LoginUsersListDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\LoginUsersListDialog.Designer.cs">
+      <DependentUpon>LoginUsersListDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="lncludes\SQLConfig.cs" />
     <Compile Include="lncludes\SQLConfiguration.cs" />
     <Compile Include="lncludes\usableFunction.cs" />
-    <Compile Include="ChildScreens\AddUser.cs">
+    <Compile Include="dialogs\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildScreens\AddUser.Designer.cs">
+    <Compile Include="dialogs\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\LoginForm.cs">
@@ -330,17 +354,29 @@
     <Compile Include="Screens\DbSettingsForm.Designer.cs">
       <DependentUpon>DbSettingsForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChildScreens\DistrictForm.resx">
+      <DependentUpon>DistrictForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildScreens\MainFormMenu.resx">
       <DependentUpon>MainFormMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildScreens\UserListForm.resx">
       <DependentUpon>UserListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\CustomMessageBox.resx">
+    <EmbeddedResource Include="dialogs\AddDistrictDialog.resx">
+      <DependentUpon>AddDistrictDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\ChangeAdminDialog.resx">
+      <DependentUpon>ChangeAdminDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\CustomMessageBox.resx">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildScreens\AddUser.resx">
+    <EmbeddedResource Include="dialogs\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\LoginUsersListDialog.resx">
+      <DependentUpon>LoginUsersListDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

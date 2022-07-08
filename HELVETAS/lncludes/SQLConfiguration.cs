@@ -1,5 +1,6 @@
 ﻿using Bunifu.UI.WinForms;
 using Guna.UI2.WinForms;
+using HELVETAS.Data;
 using HELVETAS.forms;
 using MySql.Data.MySqlClient;
 using System;
@@ -63,7 +64,7 @@ namespace HELVETAS.lncludes
         
         
 
-        public DataTable loginUser(string sql)
+        public DataTable sqlSelectQuery(string sql)
         {
             openConnection();
 
@@ -155,6 +156,38 @@ namespace HELVETAS.lncludes
                 cmd = null;
                 dataAdapter = null;
                 dataTable = null;
+            }
+        }
+
+
+
+        public int saveActionDate(string id_action)
+        {
+            string sql = "insert into time_users (id_user, date, time, action_user) values('" + UserData.id_user + "', curdate(), curtime(), '" + id_action + "');";
+            try 
+            {
+                openConnection();
+
+                cmd = new MySqlCommand();
+
+                cmd.Connection = connection;
+                cmd.CommandText = sql;
+
+
+                return cmd.ExecuteNonQuery();
+                
+
+            }
+
+            catch (Exception ex)
+            {
+                return -1;
+            }
+
+            finally
+            {
+                closeConnection();
+                cmd = null;
             }
         }
     }

@@ -1,5 +1,6 @@
 ﻿using Bunifu.UI.WinForms;
 using HELVETAS.Data;
+using HELVETAS.dialogs;
 using HELVETAS.lncludes;
 using HELVETAS.Screens;
 using System;
@@ -24,32 +25,10 @@ namespace HELVETAS.ChildScreens
         SQLConfiguration sqlConfiguration;
         AddUser addUser;
 
+        ChangeAdminDialog changeAdminDialog;
+        LoginUsersListDialog loginUsersListDialog;
 
-        private void create_user_btn_Click(object sender, EventArgs e)
-        {
-            if(UserData.type_user == "Админ")
-            {
-                addUser = new AddUser(this, "", "Сохтан", "");
-                addUser.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Танхо админ коргар илова карда метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void change_admin_btn_Click(object sender, EventArgs e)
-        {
-            if (UserData.type_user == "Админ")
-            {
-                addUser = new AddUser(this, "", "Сохтан", "");
-                addUser.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Танхо админ коргар илова карда метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        
 
         private void UserListForm_Shown(object sender, EventArgs e)
         {
@@ -66,6 +45,7 @@ namespace HELVETAS.ChildScreens
 
             sqlConfiguration.displayList(sql, dataGridViewUsers);
         }
+        
 
         private void dataGridViewUsers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -92,7 +72,7 @@ namespace HELVETAS.ChildScreens
             {
                if (UserData.type_user == "Админ")
                 {
-                    DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + dataGridViewUsers.Rows[e.RowIndex].Cells[3].Value + " " + dataGridViewUsers.Rows[e.RowIndex].Cells[4].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.None);
+                    DialogResult dialogResult = MessageBox.Show("Хамаи амалхои коргар аз руйхат нест мешаванд.\nШумо дар хакикат " + dataGridViewUsers.Rows[e.RowIndex].Cells[3].Value + " " + dataGridViewUsers.Rows[e.RowIndex].Cells[4].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.None);
 
 
                     if (dialogResult == DialogResult.Yes)
@@ -104,13 +84,18 @@ namespace HELVETAS.ChildScreens
                         }
                         else
                         {
-                            string sql = "delete from users where id = '" + dataGridViewUsers.Rows[e.RowIndex].Cells[2].Value + "'";
+                            string sqlDeleteTime = "delete from time_users where id_user = '" + dataGridViewUsers.Rows[e.RowIndex].Cells[2].Value + "'";
+                            string sqlDeleteUser = "delete from users where id = '" + dataGridViewUsers.Rows[e.RowIndex].Cells[2].Value + "'";
+                            
 
-                            int res = sqlConfiguration.sqlQuery(sql);
-                            if (res == 1)
+                            int res1 = sqlConfiguration.sqlQuery(sqlDeleteTime);
+                            int res2 = sqlConfiguration.sqlQuery(sqlDeleteUser);
+                            if (res1 == 1 && res2 == 1)
                             {
-                                MessageBox.Show("Коргар бо муваффакият нест карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                                 display();
+                                MessageBox.Show("Коргар бо муваффакият нест карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
+                                sqlConfiguration.saveActionDate("4");
+
                             }
                             else
                             {
@@ -127,7 +112,45 @@ namespace HELVETAS.ChildScreens
                 
             }
         }
-
         
+
+        private void login_list_users_Click_1(object sender, EventArgs e)
+        {
+            if (UserData.type_user == "Админ")
+            {
+                loginUsersListDialog = new LoginUsersListDialog();
+                loginUsersListDialog.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Танхо админ руйхатро дида метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void change_admin_btn_Click_1(object sender, EventArgs e)
+        {
+            if (UserData.type_user == "Админ")
+            {
+                changeAdminDialog = new ChangeAdminDialog(this);
+                changeAdminDialog.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Танхо админ коргар илова карда метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void create_user_btn_Click_1(object sender, EventArgs e)
+        {
+            if (UserData.type_user == "Админ")
+            {
+                addUser = new AddUser(this, "", "Сохтан", "");
+                addUser.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Танхо админ коргар илова карда метавонад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

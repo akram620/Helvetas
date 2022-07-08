@@ -82,7 +82,7 @@ namespace HELVETAS
 
             MainForm mainForm = new MainForm();
 
-            DataTable dataTable = sqlConfiguration.loginUser(sql);
+            DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
 
             if (dataTable == null)
             {
@@ -92,8 +92,11 @@ namespace HELVETAS
             {
                 if (dataTable.Rows.Count == 1)
                 {
+                    UserData.id_user = dataTable.Rows[0]["id"].ToString();
                     UserData.name_user = dataTable.Rows[0]["name_user"].ToString();
                     UserData.type_user = dataTable.Rows[0]["type_user"].ToString();
+
+                    saveDate();
 
                     mainForm.Show();
                     this.Hide();
@@ -105,6 +108,12 @@ namespace HELVETAS
             }
 
             
+        }
+
+        private void saveDate()
+        {
+            string sql = "insert into time_users (id_user, date, time, action_user) values('" + UserData.id_user + "', curdate(), curtime(), '1');";
+            sqlConfiguration.sqlQuery(sql);
         }
 
         private void connect_btn_Click(object sender, EventArgs e)

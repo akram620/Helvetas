@@ -8,6 +8,8 @@ namespace HELVETAS.Data
 {
     class UserData
     {
+        public static MainForm mainForm { get; set; }
+
         public static string id_user { get; set; }
         public static string name_user { get; set; }
         public static string type_user { get; set; }

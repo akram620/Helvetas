@@ -99,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(356, 255);
+            this.label1.Location = new System.Drawing.Point(356, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 17);
             this.label1.TabIndex = 7;
@@ -109,7 +109,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(356, 330);
+            this.label2.Location = new System.Drawing.Point(356, 317);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 8;
@@ -118,7 +118,7 @@
             // bunifuAppBar1
             // 
             this.bunifuAppBar1.AutoSize = true;
-            this.bunifuAppBar1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.bunifuAppBar1.BackColor = System.Drawing.SystemColors.Highlight;
             this.bunifuAppBar1.ControlBoxColor = System.Drawing.Color.White;
             this.bunifuAppBar1.ControlBoxColorActive = System.Drawing.Color.Gainsboro;
             this.bunifuAppBar1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -186,16 +186,16 @@
             this.login_btn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.login_btn.IconSize = 25;
             this.login_btn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.login_btn.IdleBorderRadius = 15;
+            this.login_btn.IdleBorderRadius = 10;
             this.login_btn.IdleBorderThickness = 1;
             this.login_btn.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.login_btn.IdleIconLeftImage = null;
             this.login_btn.IdleIconRightImage = null;
             this.login_btn.IndicateFocus = false;
-            this.login_btn.Location = new System.Drawing.Point(351, 418);
+            this.login_btn.Location = new System.Drawing.Point(351, 411);
             this.login_btn.Name = "login_btn";
             this.login_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.login_btn.OnDisabledState.BorderRadius = 15;
+            this.login_btn.OnDisabledState.BorderRadius = 10;
             this.login_btn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.login_btn.OnDisabledState.BorderThickness = 1;
             this.login_btn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -203,7 +203,7 @@
             this.login_btn.OnDisabledState.IconLeftImage = null;
             this.login_btn.OnDisabledState.IconRightImage = null;
             this.login_btn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.login_btn.onHoverState.BorderRadius = 15;
+            this.login_btn.onHoverState.BorderRadius = 10;
             this.login_btn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.login_btn.onHoverState.BorderThickness = 1;
             this.login_btn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -211,7 +211,7 @@
             this.login_btn.onHoverState.IconLeftImage = null;
             this.login_btn.onHoverState.IconRightImage = null;
             this.login_btn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.login_btn.OnIdleState.BorderRadius = 15;
+            this.login_btn.OnIdleState.BorderRadius = 10;
             this.login_btn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.login_btn.OnIdleState.BorderThickness = 1;
             this.login_btn.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
@@ -219,14 +219,14 @@
             this.login_btn.OnIdleState.IconLeftImage = null;
             this.login_btn.OnIdleState.IconRightImage = null;
             this.login_btn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.login_btn.OnPressedState.BorderRadius = 15;
+            this.login_btn.OnPressedState.BorderRadius = 10;
             this.login_btn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.login_btn.OnPressedState.BorderThickness = 1;
             this.login_btn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.login_btn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.login_btn.OnPressedState.IconLeftImage = null;
             this.login_btn.OnPressedState.IconRightImage = null;
-            this.login_btn.Size = new System.Drawing.Size(356, 43);
+            this.login_btn.Size = new System.Drawing.Size(356, 42);
             this.login_btn.TabIndex = 5;
             this.login_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.login_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -264,7 +264,7 @@
             this.password_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.password_txt.Lines = new string[] {
         "12345"};
-            this.password_txt.Location = new System.Drawing.Point(351, 348);
+            this.password_txt.Location = new System.Drawing.Point(351, 335);
             this.password_txt.MaxLength = 32767;
             this.password_txt.MinimumSize = new System.Drawing.Size(1, 1);
             this.password_txt.Modified = false;
@@ -340,7 +340,7 @@
             this.login_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.login_txt.Lines = new string[] {
         "akram"};
-            this.login_txt.Location = new System.Drawing.Point(351, 275);
+            this.login_txt.Location = new System.Drawing.Point(351, 267);
             this.login_txt.MaxLength = 32767;
             this.login_txt.MinimumSize = new System.Drawing.Size(1, 1);
             this.login_txt.Modified = false;

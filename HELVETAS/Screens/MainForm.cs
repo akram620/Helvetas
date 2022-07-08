@@ -1,5 +1,6 @@
 ﻿using HELVETAS.ChildScreens;
 using HELVETAS.Data;
+using HELVETAS.lncludes;
 using HELVETAS.Screens;
 using System;
 using System.Collections.Generic;
@@ -22,15 +23,26 @@ namespace HELVETAS
             hideMenu();
         }
 
+        SQLConfiguration sqlConfiguration;
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            
-        }
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            name_type_user_txt.Text = UserData.getInfo();
+            /*int w = Screen.PrimaryScreen.Bounds.Width - 20;
+            int h = Screen.PrimaryScreen.Bounds.Height - 20;
+
+            this.Size = new Size(w, h);
+            this.Location = new Point(10, 10);*/
+
+            UserData.mainForm = this;
+
+            setNameAndType();
+        }
+
+        public void setNameAndType()
+        {
+            name_user_txt.Text = UserData.name_user;
+            type_user_txt.Text = UserData.type_user;
         }
 
 
@@ -61,6 +73,10 @@ namespace HELVETAS
             childForm.Show();
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            sqlConfiguration = new SQLConfiguration();
+        }
 
 
 
@@ -101,15 +117,11 @@ namespace HELVETAS
         {
             Application.Exit();
         }
+        
+        
 
-        private void bunifuButton21_Click(object sender, EventArgs e)
-        {
-            LoginForm loginForm = new LoginForm();
-            this.Hide();
-            loginForm.Show();
-        }
 
- 
+
 
         private void water_jouarnal_but_m_m_Click(object sender, EventArgs e)
         {
@@ -126,9 +138,9 @@ namespace HELVETAS
 
         }
 
-        private void bunifuButton7_Click(object sender, EventArgs e)
+        private void district_btn_menu_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new DistrictForm());
         }
 
         private void bunifuButton6_Click(object sender, EventArgs e)
@@ -154,6 +166,14 @@ namespace HELVETAS
         private void bunifuButton13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void logout_btn1_Click_1(object sender, EventArgs e)
+        {
+            sqlConfiguration.saveActionDate("2");
+            LoginForm loginForm = new LoginForm();
+            this.Hide();
+            loginForm.Show();
         }
     }
 }
