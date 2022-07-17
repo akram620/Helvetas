@@ -1,15 +1,8 @@
 ﻿using HELVETAS.ChildScreens;
+using HELVETAS.ChildScreens.Journals;
 using HELVETAS.Data;
 using HELVETAS.lncludes;
-using HELVETAS.Screens;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -28,26 +21,18 @@ namespace HELVETAS
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            /*int w = Screen.PrimaryScreen.Bounds.Width - 20;
-            int h = Screen.PrimaryScreen.Bounds.Height - 20;
-
-            this.Size = new Size(w, h);
-            this.Location = new Point(10, 10);*/
-
-            UserData.mainForm = this;
+            StaticData.mainForm = this;
 
             setNameAndType();
         }
 
         public void setNameAndType()
         {
-            name_user_txt.Text = UserData.name_user;
-            type_user_txt.Text = UserData.type_user;
+            name_user_txt.Text = StaticData.name_user;
+            type_user_txt.Text = StaticData.type_user;
         }
 
-
-
-
+        
         private void hideMenu()
         {
             panel_menu_journal.Visible = false;
@@ -103,7 +88,7 @@ namespace HELVETAS
 
         private void home_btn_menu_Click(object sender, EventArgs e)
         {
-            openChildForm(new MainFormMenu());
+
         }
         
 
@@ -128,9 +113,9 @@ namespace HELVETAS
 
         }
 
-        private void elect_journal_but_m_m_Click(object sender, EventArgs e)
+        private void elecricity_journal_btn_menu_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new ChooseElectricityJournalForm());
         }
 
         private void bunifuButton5_Click(object sender, EventArgs e)
@@ -143,25 +128,22 @@ namespace HELVETAS
             openChildForm(new DistrictForm());
         }
 
-        private void bunifuButton6_Click(object sender, EventArgs e)
+        private void avp_btn_menu_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new AVPForm());
         }
 
-        private void bunifuButton9_Click(object sender, EventArgs e)
+        private void kanal_btn_menu_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new KanalForm());
         }
 
-        private void bunifuButton10_Click(object sender, EventArgs e)
+        private void pump_btn_menu_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new PumpForm());
         }
 
-        private void bunifuButton11_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void bunifuButton13_Click(object sender, EventArgs e)
         {
@@ -170,10 +152,20 @@ namespace HELVETAS
 
         private void logout_btn1_Click_1(object sender, EventArgs e)
         {
-            sqlConfiguration.saveActionDate("2");
+            //sqlConfiguration.saveActionDate("2");
             LoginForm loginForm = new LoginForm();
             this.Hide();
             loginForm.Show();
+        }
+
+        private void station_btn_menu_Click(object sender, EventArgs e)
+        {
+            openChildForm(new StationForm());
+        }
+
+        private void dekhkan_btn_menu_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FarmForm());
         }
     }
 }

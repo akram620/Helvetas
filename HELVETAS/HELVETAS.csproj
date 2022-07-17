@@ -282,55 +282,115 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChildScreens\DistrictForm.cs">
+    <Compile Include="ChildScreens\Directory\AVPForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildScreens\DistrictForm.Designer.cs">
+    <Compile Include="ChildScreens\Directory\AVPForm.Designer.cs">
+      <DependentUpon>AVPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildScreens\Directory\DistrictForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\Directory\DistrictForm.Designer.cs">
       <DependentUpon>DistrictForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildScreens\MainFormMenu.cs">
+    <Compile Include="ChildScreens\Directory\FarmForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildScreens\MainFormMenu.Designer.cs">
-      <DependentUpon>MainFormMenu.cs</DependentUpon>
+    <Compile Include="ChildScreens\Directory\FarmForm.Designer.cs">
+      <DependentUpon>FarmForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildScreens\UserListForm.cs">
+    <Compile Include="ChildScreens\Directory\KanalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildScreens\UserListForm.Designer.cs">
+    <Compile Include="ChildScreens\Directory\KanalForm.Designer.cs">
+      <DependentUpon>KanalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildScreens\Directory\PumpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\Directory\PumpForm.Designer.cs">
+      <DependentUpon>PumpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildScreens\Directory\StationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\Directory\StationForm.Designer.cs">
+      <DependentUpon>StationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildScreens\Directory\UserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\Directory\UserListForm.Designer.cs">
       <DependentUpon>UserListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\UserData.cs" />
-    <Compile Include="dialogs\AddDistrictDialog.cs">
+    <Compile Include="ChildScreens\Journals\ChooseElectricityJournalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dialogs\AddDistrictDialog.Designer.cs">
+    <Compile Include="ChildScreens\Journals\ChooseElectricityJournalForm.Designer.cs">
+      <DependentUpon>ChooseElectricityJournalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB\StaticData.cs" />
+    <Compile Include="Dialogs\DirectoryDialogs\AddAVPDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DirectoryDialogs\AddAVPDialog.Designer.cs">
+      <DependentUpon>AddAVPDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DirectoryDialogs\AddDistrictDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DirectoryDialogs\AddDistrictDialog.Designer.cs">
       <DependentUpon>AddDistrictDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="dialogs\ChangeAdminDialog.cs">
+    <Compile Include="Dialogs\DirectoryDialogs\ChangeAdminDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dialogs\ChangeAdminDialog.Designer.cs">
+    <Compile Include="Dialogs\DirectoryDialogs\ChangeAdminDialog.Designer.cs">
       <DependentUpon>ChangeAdminDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="dialogs\CustomMessageBox.cs">
+    <Compile Include="Dialogs\DirectoryDialogs\FarmDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dialogs\CustomMessageBox.Designer.cs">
-      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    <Compile Include="Dialogs\DirectoryDialogs\FarmDialog.Designer.cs">
+      <DependentUpon>FarmDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="dialogs\LoginUsersListDialog.cs">
+    <Compile Include="Dialogs\DirectoryDialogs\KanalDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dialogs\LoginUsersListDialog.Designer.cs">
+    <Compile Include="Dialogs\DirectoryDialogs\KanalDialog.Designer.cs">
+      <DependentUpon>KanalDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DirectoryDialogs\LoginUsersListDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DirectoryDialogs\LoginUsersListDialog.Designer.cs">
       <DependentUpon>LoginUsersListDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="lncludes\SQLConfiguration.cs" />
-    <Compile Include="dialogs\AddUser.cs">
+    <Compile Include="Dialogs\DirectoryDialogs\PumpDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dialogs\AddUser.Designer.cs">
+    <Compile Include="Dialogs\DirectoryDialogs\PumpDialog.Designer.cs">
+      <DependentUpon>PumpDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DirectoryDialogs\StationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DirectoryDialogs\StationDialog.Designer.cs">
+      <DependentUpon>StationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB\SQLConfiguration.cs" />
+    <Compile Include="Dialogs\DirectoryDialogs\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DirectoryDialogs\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ElecricityJournalDialog\ElectricityJournalDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ElecricityJournalDialog\ElectricityJournalDialog.Designer.cs">
+      <DependentUpon>ElectricityJournalDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\LoginForm.cs">
       <SubType>Form</SubType>
@@ -352,29 +412,59 @@
     <Compile Include="Screens\DbSettingsForm.Designer.cs">
       <DependentUpon>DbSettingsForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChildScreens\DistrictForm.resx">
+    <EmbeddedResource Include="ChildScreens\Directory\AVPForm.resx">
+      <DependentUpon>AVPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildScreens\Directory\DistrictForm.resx">
       <DependentUpon>DistrictForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildScreens\MainFormMenu.resx">
-      <DependentUpon>MainFormMenu.cs</DependentUpon>
+    <EmbeddedResource Include="ChildScreens\Directory\FarmForm.resx">
+      <DependentUpon>FarmForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildScreens\UserListForm.resx">
+    <EmbeddedResource Include="ChildScreens\Directory\KanalForm.resx">
+      <DependentUpon>KanalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildScreens\Directory\PumpForm.resx">
+      <DependentUpon>PumpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildScreens\Directory\StationForm.resx">
+      <DependentUpon>StationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildScreens\Directory\UserListForm.resx">
       <DependentUpon>UserListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dialogs\AddDistrictDialog.resx">
+    <EmbeddedResource Include="ChildScreens\Journals\ChooseElectricityJournalForm.resx">
+      <DependentUpon>ChooseElectricityJournalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DirectoryDialogs\AddAVPDialog.resx">
+      <DependentUpon>AddAVPDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DirectoryDialogs\AddDistrictDialog.resx">
       <DependentUpon>AddDistrictDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dialogs\ChangeAdminDialog.resx">
+    <EmbeddedResource Include="Dialogs\DirectoryDialogs\ChangeAdminDialog.resx">
       <DependentUpon>ChangeAdminDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dialogs\CustomMessageBox.resx">
-      <DependentUpon>CustomMessageBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dialogs\AddUser.resx">
+    <EmbeddedResource Include="Dialogs\DirectoryDialogs\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dialogs\LoginUsersListDialog.resx">
+    <EmbeddedResource Include="Dialogs\DirectoryDialogs\FarmDialog.resx">
+      <DependentUpon>FarmDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DirectoryDialogs\KanalDialog.resx">
+      <DependentUpon>KanalDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DirectoryDialogs\LoginUsersListDialog.resx">
       <DependentUpon>LoginUsersListDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DirectoryDialogs\PumpDialog.resx">
+      <DependentUpon>PumpDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DirectoryDialogs\StationDialog.resx">
+      <DependentUpon>StationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ElecricityJournalDialog\ElectricityJournalDialog.resx">
+      <DependentUpon>ElectricityJournalDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -468,10 +558,11 @@
     <None Include="Resources\icon_rayoni.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\delete_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\edit_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\delete_icon.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

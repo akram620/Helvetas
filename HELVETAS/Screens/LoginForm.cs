@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HELVETAS.forms;
 using System.Windows.Forms;
 using System.IO;
 using HELVETAS.lncludes;
@@ -92,11 +86,12 @@ namespace HELVETAS
             {
                 if (dataTable.Rows.Count == 1)
                 {
-                    UserData.id_user = dataTable.Rows[0]["id"].ToString();
-                    UserData.name_user = dataTable.Rows[0]["name_user"].ToString();
-                    UserData.type_user = dataTable.Rows[0]["type_user"].ToString();
+                    StaticData.id_user = dataTable.Rows[0]["id"].ToString();
+                    StaticData.name_user = dataTable.Rows[0]["name_user"].ToString();
+                    StaticData.type_user = dataTable.Rows[0]["type_user"].ToString();
+                    StaticData.password_user = dataTable.Rows[0]["password_user"].ToString();
 
-                    saveDate();
+                    // saveDate();
 
                     mainForm.Show();
                     this.Hide();
@@ -112,7 +107,7 @@ namespace HELVETAS
 
         private void saveDate()
         {
-            string sql = "insert into time_users (id_user, date, time, action_user) values('" + UserData.id_user + "', curdate(), curtime(), '1');";
+            string sql = "insert into time_users (id_user, date, time, action_user) values('" + StaticData.id_user + "', curdate(), curtime(), '1');";
             sqlConfiguration.sqlQuery(sql);
         }
 

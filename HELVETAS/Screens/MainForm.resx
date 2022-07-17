@@ -124,14 +124,14 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>117</value>
+    <value>66</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1120, 700</value>
+    <value>1120, 766</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel_child_all.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -141,7 +141,7 @@
     <value>262, 119</value>
   </data>
   <data name="panel_child_all.Size" type="System.Drawing.Size, System.Drawing">
-    <value>853, 576</value>
+    <value>853, 676</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel_child_all.TabIndex" type="System.Int32, mscorlib">
@@ -373,7 +373,7 @@
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="bunifuButton13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 504</value>
+    <value>0, 544</value>
   </data>
   <data name="bunifuButton13.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 39</value>
@@ -391,6 +391,42 @@
     <value>panel_menu</value>
   </data>
   <data name="&gt;&gt;bunifuButton13.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="station_btn_menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANYAAAAnCAYAAABzLbaSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVHhe7dOhAcIAEATBlA2VRlBGCiCgObfIEfNiT/9x
+        PM/X8TjfwJ98f2oOQDMj0MwINDMCzYxAMyPQzAg0MwLNjEAzI9DMCDQzAs2MQDMj0MwINDMCzYxAMyPQ
+        zAg0MwLNjEAzI9DMCDQzAs2MQDMj0MwINDMCzYxAMyPQzAg0MwLNjEAzI9DMCDQzAs2MQPM5108EgvO6
+        AfeUJvRwniQhAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="station_btn_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="station_btn_menu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="station_btn_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 234</value>
+  </data>
+  <data name="station_btn_menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 39</value>
+  </data>
+  <data name="station_btn_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;station_btn_menu.Name" xml:space="preserve">
+    <value>station_btn_menu</value>
+  </data>
+  <data name="&gt;&gt;station_btn_menu.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;station_btn_menu.Parent" xml:space="preserve">
+    <value>panel_menu_referens_but</value>
+  </data>
+  <data name="&gt;&gt;station_btn_menu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="users_btn_menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -427,45 +463,9 @@
     <value>panel_menu_referens_but</value>
   </data>
   <data name="&gt;&gt;users_btn_menu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="bunifuButton11.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAANYAAAAnCAYAAABzLbaSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVHhe7dOhAcIAEATBlA2VRlBGCiCgObfIEfNiT/9x
-        PM/X8TjfwJ98f2oOQDMj0MwINDMCzYxAMyPQzAg0MwLNjEAzI9DMCDQzAs2MQDMj0MwINDMCzYxAMyPQ
-        zAg0MwLNjEAzI9DMCDQzAs2MQDMj0MwINDMCzYxAMyPQzAg0MwLNjEAzI9DMCDQzAs2MQPM5108EgvO6
-        AfeUJvRwniQhAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="bunifuButton11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bunifuButton11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 156</value>
-  </data>
-  <data name="bunifuButton11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 39</value>
-  </data>
-  <data name="bunifuButton11.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;bunifuButton11.Name" xml:space="preserve">
-    <value>bunifuButton11</value>
-  </data>
-  <data name="&gt;&gt;bunifuButton11.Type" xml:space="preserve">
-    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
-  </data>
-  <data name="&gt;&gt;bunifuButton11.Parent" xml:space="preserve">
-    <value>panel_menu_referens_but</value>
-  </data>
-  <data name="&gt;&gt;bunifuButton11.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="bunifuButton10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="dekhkan_btn_menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANYAAAAnCAYAAABzLbaSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVHhe7dOhAcIAEATBlA2VRlBGCiCgObfIEfNiT/9x
@@ -474,34 +474,34 @@
         AfeUJvRwniQhAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuButton10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="dekhkan_btn_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bunifuButton10.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="dekhkan_btn_menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="bunifuButton10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 117</value>
+  <data name="dekhkan_btn_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 156</value>
   </data>
-  <data name="bunifuButton10.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dekhkan_btn_menu.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 39</value>
   </data>
-  <data name="bunifuButton10.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="dekhkan_btn_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;bunifuButton10.Name" xml:space="preserve">
-    <value>bunifuButton10</value>
+  <data name="&gt;&gt;dekhkan_btn_menu.Name" xml:space="preserve">
+    <value>dekhkan_btn_menu</value>
   </data>
-  <data name="&gt;&gt;bunifuButton10.Type" xml:space="preserve">
+  <data name="&gt;&gt;dekhkan_btn_menu.Type" xml:space="preserve">
     <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
   </data>
-  <data name="&gt;&gt;bunifuButton10.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dekhkan_btn_menu.Parent" xml:space="preserve">
     <value>panel_menu_referens_but</value>
   </data>
-  <data name="&gt;&gt;bunifuButton10.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dekhkan_btn_menu.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="bunifuButton9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pump_btn_menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANYAAAAnCAYAAABzLbaSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVHhe7dOhAcIAEATBlA2VRlBGCiCgObfIEfNiT/9x
@@ -510,34 +510,34 @@
         AfeUJvRwniQhAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuButton9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="pump_btn_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bunifuButton9.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="pump_btn_menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="bunifuButton9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 78</value>
+  <data name="pump_btn_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 117</value>
   </data>
-  <data name="bunifuButton9.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pump_btn_menu.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 39</value>
   </data>
-  <data name="bunifuButton9.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="pump_btn_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;bunifuButton9.Name" xml:space="preserve">
-    <value>bunifuButton9</value>
+  <data name="&gt;&gt;pump_btn_menu.Name" xml:space="preserve">
+    <value>pump_btn_menu</value>
   </data>
-  <data name="&gt;&gt;bunifuButton9.Type" xml:space="preserve">
+  <data name="&gt;&gt;pump_btn_menu.Type" xml:space="preserve">
     <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
   </data>
-  <data name="&gt;&gt;bunifuButton9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pump_btn_menu.Parent" xml:space="preserve">
     <value>panel_menu_referens_but</value>
   </data>
-  <data name="&gt;&gt;bunifuButton9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pump_btn_menu.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="bunifuButton6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="kanal_btn_menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANYAAAAnCAYAAABzLbaSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVHhe7dOhAcIAEATBlA2VRlBGCiCgObfIEfNiT/9x
@@ -546,32 +546,68 @@
         AfeUJvRwniQhAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuButton6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="kanal_btn_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bunifuButton6.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="kanal_btn_menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="bunifuButton6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 39</value>
+  <data name="kanal_btn_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 78</value>
   </data>
-  <data name="bunifuButton6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="kanal_btn_menu.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 39</value>
   </data>
-  <data name="bunifuButton6.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="kanal_btn_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;bunifuButton6.Name" xml:space="preserve">
-    <value>bunifuButton6</value>
+  <data name="&gt;&gt;kanal_btn_menu.Name" xml:space="preserve">
+    <value>kanal_btn_menu</value>
   </data>
-  <data name="&gt;&gt;bunifuButton6.Type" xml:space="preserve">
+  <data name="&gt;&gt;kanal_btn_menu.Type" xml:space="preserve">
     <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
   </data>
-  <data name="&gt;&gt;bunifuButton6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;kanal_btn_menu.Parent" xml:space="preserve">
     <value>panel_menu_referens_but</value>
   </data>
-  <data name="&gt;&gt;bunifuButton6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;kanal_btn_menu.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="avp_btn_menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANYAAAAnCAYAAABzLbaSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVHhe7dOhAcIAEATBlA2VRlBGCiCgObfIEfNiT/9x
+        PM/X8TjfwJ98f2oOQDMj0MwINDMCzYxAMyPQzAg0MwLNjEAzI9DMCDQzAs2MQDMj0MwINDMCzYxAMyPQ
+        zAg0MwLNjEAzI9DMCDQzAs2MQDMj0MwINDMCzYxAMyPQzAg0MwLNjEAzI9DMCDQzAs2MQPM5108EgvO6
+        AfeUJvRwniQhAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="avp_btn_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="avp_btn_menu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="avp_btn_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 39</value>
+  </data>
+  <data name="avp_btn_menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 39</value>
+  </data>
+  <data name="avp_btn_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;avp_btn_menu.Name" xml:space="preserve">
+    <value>avp_btn_menu</value>
+  </data>
+  <data name="&gt;&gt;avp_btn_menu.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;avp_btn_menu.Parent" xml:space="preserve">
+    <value>panel_menu_referens_but</value>
+  </data>
+  <data name="&gt;&gt;avp_btn_menu.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="district_btn_menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -607,13 +643,13 @@
     <value>panel_menu_referens_but</value>
   </data>
   <data name="&gt;&gt;district_btn_menu.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="panel_menu_referens_but.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 8</value>
   </data>
   <data name="panel_menu_referens_but.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 242</value>
+    <value>214, 275</value>
   </data>
   <data name="panel_menu_referens_but.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -637,7 +673,7 @@
     <value>0, 254</value>
   </data>
   <data name="panel_menu_reference.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 250</value>
+    <value>236, 290</value>
   </data>
   <data name="panel_menu_reference.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -726,7 +762,7 @@
   <data name="&gt;&gt;bunifuButton5.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="elect_journal_but_m_m.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="elecricity_journal_btn_menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANYAAAAnCAYAAABzLbaSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVHhe7dOhAcIAEATBlA2VRlBGCiCgObfIEfNiT/9x
@@ -735,31 +771,31 @@
         AfeUJvRwniQhAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="elect_journal_but_m_m.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="elecricity_journal_btn_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="elect_journal_but_m_m.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="elecricity_journal_btn_menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="elect_journal_but_m_m.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="elecricity_journal_btn_menu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 39</value>
   </data>
-  <data name="elect_journal_but_m_m.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="elecricity_journal_btn_menu.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 39</value>
   </data>
-  <data name="elect_journal_but_m_m.TabIndex" type="System.Int32, mscorlib">
+  <data name="elecricity_journal_btn_menu.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;elect_journal_but_m_m.Name" xml:space="preserve">
-    <value>elect_journal_but_m_m</value>
+  <data name="&gt;&gt;elecricity_journal_btn_menu.Name" xml:space="preserve">
+    <value>elecricity_journal_btn_menu</value>
   </data>
-  <data name="&gt;&gt;elect_journal_but_m_m.Type" xml:space="preserve">
+  <data name="&gt;&gt;elecricity_journal_btn_menu.Type" xml:space="preserve">
     <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
   </data>
-  <data name="&gt;&gt;elect_journal_but_m_m.Parent" xml:space="preserve">
+  <data name="&gt;&gt;elecricity_journal_btn_menu.Parent" xml:space="preserve">
     <value>panel_menu_journal_but</value>
   </data>
-  <data name="&gt;&gt;elect_journal_but_m_m.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;elecricity_journal_btn_menu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="water_jouarnal_but_m_m.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -919,7 +955,7 @@
     <value>12, 95</value>
   </data>
   <data name="panel_menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 544</value>
+    <value>236, 600</value>
   </data>
   <data name="panel_menu.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -6210,7 +6246,7 @@
     <value>0, 46</value>
   </data>
   <data name="panel_left.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 654</value>
+    <value>262, 720</value>
   </data>
   <data name="panel_left.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6262,7 +6298,7 @@
     <value>3</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1120, 700</value>
+    <value>1120, 766</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

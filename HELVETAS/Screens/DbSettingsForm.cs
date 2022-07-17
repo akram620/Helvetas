@@ -6,7 +6,6 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using HELVETAS.forms;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HELVETAS.lncludes;
@@ -18,8 +17,7 @@ namespace HELVETAS
     {
         SQLConfiguration sqlConfiguration;
         
-
-        CustomMessageBox customMessageBox;
+       
 
         string path = @"setting\setting_db.txt";
 
@@ -34,8 +32,6 @@ namespace HELVETAS
 
         private void DbSettingsForm_Load(object sender, EventArgs e)
         {
-            customMessageBox = new CustomMessageBox();
-
 
             List<string> setting_db = new List<string>(); 
             string line;
@@ -65,17 +61,14 @@ namespace HELVETAS
         {            
             if (testFunctionForDB())
             {
-                customMessageBox.label_txt_info_txt = "Натича: Ба база пайваст шудан мумкин аст!";
-                customMessageBox.img_info_img = Properties.Resources.info;
-                customMessageBox.ShowDialog();
+                MessageBox.Show("Натича: Ба база пайваст шудан мумкин аст!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
+
                 save_btn.Enabled = true;
                 connect_but.Enabled = true;
             }
             else
             {
-                customMessageBox.label_txt_info_txt = "Натича: Ба база пайвайт шудан номумкин аст!";
-                customMessageBox.img_info_img = Properties.Resources.info_button;
-                customMessageBox.ShowDialog();
+                MessageBox.Show("Натича: Ба база пайвайт шудан номумкин аст!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
                 
         }
@@ -93,28 +86,19 @@ namespace HELVETAS
                     file.WriteLine(txt_user.Text);
                     file.WriteLine(txt_password.Text);
 
-
-                    customMessageBox.label_txt_info_txt = "Амалиёт анчом ёфт!";
-                    customMessageBox.img_info_img = Properties.Resources.info;
-                    customMessageBox.ShowDialog();
+                    MessageBox.Show("Амалиёт анчом ёфт!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                     file.Flush();
                     file.Close();
 
                 }
                 catch (Exception ex)
                 {
-                    CustomMessageBox new_msg = new CustomMessageBox();
-                    new_msg.label_txt_info_txt = "Шумо хатогие доред!\n" + @"\b Хатоги" + "\n" + ex.ToString();
-                    new_msg.img_info_img = Properties.Resources.info_button;
-                    new_msg.ShowDialog();
-
+                    MessageBox.Show("Хатоги:\n" + ex.ToString(), "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                customMessageBox.label_txt_info_txt = "Бо ин маълумотхо ба база пайваст шудан номумкин аст!";
-                customMessageBox.img_info_img = Properties.Resources.info_button;
-                customMessageBox.ShowDialog();
+                MessageBox.Show("Бо ин маълумотхо ба база пайваст шудан номумкин аст!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
@@ -128,9 +112,7 @@ namespace HELVETAS
             }
             else
             {
-                customMessageBox.label_txt_info_txt = "Бо ин маълумотхо ба база пайваст шудан номумкин аст!";
-                customMessageBox.img_info_img = Properties.Resources.info_button;
-                customMessageBox.ShowDialog();
+                MessageBox.Show("Бо ин маълумотхо ба база пайваст шудан номумкин аст!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
