@@ -72,7 +72,7 @@ namespace HELVETAS.ChildScreens
             {
                if (StaticData.type_user == "Админ")
                 {
-                    DialogResult dialogResult = MessageBox.Show("Хамаи амалхои коргар аз руйхат нест мешаванд!!!\nШумо дар хакикат " + dataGridViewUsers.Rows[e.RowIndex].Cells[3].Value + " " + dataGridViewUsers.Rows[e.RowIndex].Cells[4].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + dataGridViewUsers.Rows[e.RowIndex].Cells[3].Value + " " + dataGridViewUsers.Rows[e.RowIndex].Cells[4].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
 
                     if (dialogResult == DialogResult.Yes)
@@ -84,13 +84,13 @@ namespace HELVETAS.ChildScreens
                         }
                         else
                         {
-                            string sqlDeleteTime = "delete from time_users where id_user = '" + dataGridViewUsers.Rows[e.RowIndex].Cells[2].Value + "'";
+                            //string sqlDeleteTime = "delete from time_users where id_user = '" + dataGridViewUsers.Rows[e.RowIndex].Cells[2].Value + "'";
                             string sqlDeleteUser = "delete from users where id = '" + dataGridViewUsers.Rows[e.RowIndex].Cells[2].Value + "'";
                             
 
-                            int res1 = sqlConfiguration.sqlQuery(sqlDeleteTime);
+                            //int res1 = sqlConfiguration.sqlQuery(sqlDeleteTime);
                             int res2 = sqlConfiguration.sqlQuery(sqlDeleteUser);
-                            if (res1 == 1 && res2 == 1)
+                            if (res2 == 1)
                             {
                                 display();
                                 MessageBox.Show("Коргар бо муваффакият нест карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);

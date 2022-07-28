@@ -324,11 +324,41 @@
     <Compile Include="ChildScreens\Directory\UserListForm.Designer.cs">
       <DependentUpon>UserListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildScreens\Journals\ChooseElectricityJournalForm.cs">
+    <Compile Include="ChildScreens\Journals\ChooseJournalsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildScreens\Journals\ChooseElectricityJournalForm.Designer.cs">
-      <DependentUpon>ChooseElectricityJournalForm.cs</DependentUpon>
+    <Compile Include="ChildScreens\Journals\ChooseJournalsForm.Designer.cs">
+      <DependentUpon>ChooseJournalsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Electricity\ElectricityJournalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Electricity\ElectricityJournalForm.Designer.cs">
+      <DependentUpon>ElectricityJournalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Water\TypeWaterJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Water\TypeWaterJournal.Designer.cs">
+      <DependentUpon>TypeWaterJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Water\WaterCounterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Water\WaterCounterForm.Designer.cs">
+      <DependentUpon>WaterCounterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Water\WaterStationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Water\WaterStationForm.Designer.cs">
+      <DependentUpon>WaterStationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Water\WaterAVPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildScreens\Journals\Water\WaterAVPForm.Designer.cs">
+      <DependentUpon>WaterAVPForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DB\StaticData.cs" />
     <Compile Include="Dialogs\DirectoryDialogs\AddAVPDialog.cs">
@@ -386,11 +416,29 @@
     <Compile Include="Dialogs\DirectoryDialogs\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\ElecricityJournalDialog\ElectricityJournalDialog.cs">
+    <Compile Include="Dialogs\Journals\ElecricityJournalDialogs\AddEditElecricityDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dialogs\ElecricityJournalDialog\ElectricityJournalDialog.Designer.cs">
-      <DependentUpon>ElectricityJournalDialog.cs</DependentUpon>
+    <Compile Include="Dialogs\Journals\ElecricityJournalDialogs\AddEditElecricityDialog.Designer.cs">
+      <DependentUpon>AddEditElecricityDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Journals\ChooseDirectoryDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Journals\ChooseDirectoryDialog.Designer.cs">
+      <DependentUpon>ChooseDirectoryDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Journals\NameJournalsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Journals\NameJournalsDialog.Designer.cs">
+      <DependentUpon>NameJournalsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Journals\WaterJournalDialogs\AddEditWaterAVPDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Journals\WaterJournalDialogs\AddEditWaterAVPDialog.Designer.cs">
+      <DependentUpon>AddEditWaterAVPDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\LoginForm.cs">
       <SubType>Form</SubType>
@@ -433,8 +481,17 @@
     <EmbeddedResource Include="ChildScreens\Directory\UserListForm.resx">
       <DependentUpon>UserListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildScreens\Journals\ChooseElectricityJournalForm.resx">
-      <DependentUpon>ChooseElectricityJournalForm.cs</DependentUpon>
+    <EmbeddedResource Include="ChildScreens\Journals\ChooseJournalsForm.resx">
+      <DependentUpon>ChooseJournalsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildScreens\Journals\Electricity\ElectricityJournalForm.resx">
+      <DependentUpon>ElectricityJournalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildScreens\Journals\Water\TypeWaterJournal.resx">
+      <DependentUpon>TypeWaterJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildScreens\Journals\Water\WaterAVPForm.resx">
+      <DependentUpon>WaterAVPForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\DirectoryDialogs\AddAVPDialog.resx">
       <DependentUpon>AddAVPDialog.cs</DependentUpon>
@@ -463,8 +520,17 @@
     <EmbeddedResource Include="Dialogs\DirectoryDialogs\StationDialog.resx">
       <DependentUpon>StationDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\ElecricityJournalDialog\ElectricityJournalDialog.resx">
-      <DependentUpon>ElectricityJournalDialog.cs</DependentUpon>
+    <EmbeddedResource Include="Dialogs\Journals\ElecricityJournalDialogs\AddEditElecricityDialog.resx">
+      <DependentUpon>AddEditElecricityDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Journals\ChooseDirectoryDialog.resx">
+      <DependentUpon>ChooseDirectoryDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Journals\NameJournalsDialog.resx">
+      <DependentUpon>NameJournalsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Journals\WaterJournalDialogs\AddEditWaterAVPDialog.resx">
+      <DependentUpon>AddEditWaterAVPDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -562,6 +628,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\delete_icon.png" />
+    <None Include="Resources\down-arrow.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

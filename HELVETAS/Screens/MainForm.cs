@@ -1,5 +1,6 @@
 ﻿using HELVETAS.ChildScreens;
 using HELVETAS.ChildScreens.Journals;
+using HELVETAS.ChildScreens.Journals.Water;
 using HELVETAS.Data;
 using HELVETAS.lncludes;
 using System;
@@ -41,7 +42,7 @@ namespace HELVETAS
 
 
         Form activeForm;
-        private void openChildForm(Form childForm)
+        public void openChildForm(Form childForm)
         {
             if(activeForm != null)
             {
@@ -108,14 +109,14 @@ namespace HELVETAS
 
 
 
-        private void water_jouarnal_but_m_m_Click(object sender, EventArgs e)
+        private void water_journal_btn_menu_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new TypeWaterJournal());
         }
 
         private void elecricity_journal_btn_menu_Click(object sender, EventArgs e)
         {
-            openChildForm(new ChooseElectricityJournalForm());
+            openChildForm(new ChooseJournalsForm(ChooseJournalsForm.ID_ELECRICITY_1));
         }
 
         private void bunifuButton5_Click(object sender, EventArgs e)

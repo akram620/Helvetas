@@ -182,7 +182,7 @@
             this.Column3.DataPropertyName = "name_kanal";
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column3.HeaderText = "АВП";
+            this.Column3.HeaderText = "Ном";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 

@@ -80,7 +80,7 @@ namespace HELVETAS
 
             if (dataTable == null)
             {
-                MessageBox.Show("Дар ким кучое хатоги хаст!!!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Хангоми пайвастшави ба база мушкили ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

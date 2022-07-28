@@ -748,5 +748,11 @@ C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScre
 C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.dialogs.FarmDialog.resources
 C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScreens.StationForm.resources
 C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.dialogs.StationDialog.resources
-C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScreens.Journals.ChooseElectricityJournalForm.resources
-C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.Dialogs.ElecricityJournalDialog.ElectricityJournalDialog.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScreens.Journals.ElectricityJournalForm.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.Dialogs.ElecricityJournalDialog.ChooseDirectoryDialog.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScreens.Journals.ChooseJournalsForm.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.Dialogs.ElecricityJournalDialog.NameJournalsDialog.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScreens.Journals.Water.TypeWaterJournal.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.Dialogs.ElecricityJournalDialog.AddEditElecricityDialog.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.ChildScreens.Journals.Water.WaterAVPForm.resources
+C:\Users\Akram\Desktop\New folder\Helvetas\HELVETAS\obj\Debug\HELVETAS.Dialogs.Journals.WaterJournalDialogs.AddEditWaterAVPDialog.resources

@@ -141,7 +141,7 @@
     <value>262, 119</value>
   </data>
   <data name="panel_child_all.Size" type="System.Drawing.Size, System.Drawing">
-    <value>853, 676</value>
+    <value>853, 644</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel_child_all.TabIndex" type="System.Int32, mscorlib">
@@ -798,7 +798,7 @@
   <data name="&gt;&gt;elecricity_journal_btn_menu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="water_jouarnal_but_m_m.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="water_journal_btn_menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANYAAAAnCAYAAABzLbaSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVHhe7dOhAcIAEATBlA2VRlBGCiCgObfIEfNiT/9x
@@ -807,31 +807,31 @@
         AfeUJvRwniQhAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="water_jouarnal_but_m_m.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="water_journal_btn_menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="water_jouarnal_but_m_m.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="water_journal_btn_menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="water_jouarnal_but_m_m.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="water_journal_btn_menu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="water_jouarnal_but_m_m.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="water_journal_btn_menu.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 39</value>
   </data>
-  <data name="water_jouarnal_but_m_m.TabIndex" type="System.Int32, mscorlib">
+  <data name="water_journal_btn_menu.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;water_jouarnal_but_m_m.Name" xml:space="preserve">
-    <value>water_jouarnal_but_m_m</value>
+  <data name="&gt;&gt;water_journal_btn_menu.Name" xml:space="preserve">
+    <value>water_journal_btn_menu</value>
   </data>
-  <data name="&gt;&gt;water_jouarnal_but_m_m.Type" xml:space="preserve">
+  <data name="&gt;&gt;water_journal_btn_menu.Type" xml:space="preserve">
     <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
   </data>
-  <data name="&gt;&gt;water_jouarnal_but_m_m.Parent" xml:space="preserve">
+  <data name="&gt;&gt;water_journal_btn_menu.Parent" xml:space="preserve">
     <value>panel_menu_journal_but</value>
   </data>
-  <data name="&gt;&gt;water_jouarnal_but_m_m.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;water_journal_btn_menu.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="panel_menu_journal_but.Location" type="System.Drawing.Point, System.Drawing">

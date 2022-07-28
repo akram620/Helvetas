@@ -42,7 +42,14 @@ namespace HELVETAS.lncludes
         {
             if (connection.State == System.Data.ConnectionState.Closed)
             {
-                connection.Open();
+                try
+                {
+                    connection.Open();
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("Хатоги хангоми пайвастшави ба база!\n\n\n" + e.ToString(), "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -50,7 +57,14 @@ namespace HELVETAS.lncludes
         {
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                connection.Close();
+                try
+                {
+                    connection.Close();
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("Хатоги хангоми пушидани база!\n" + e.ToString(), "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
